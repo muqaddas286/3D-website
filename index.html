@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#02040D">
+<title>MUQI - cadet SkyPulse</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@1,94,900&family=Urbanist:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main class="stage" id="stage">
+
+  <!-- Original cinematic plate -->
+  <img
+    class="plate"
+    src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/a194141a-44ba-44bb-8372-e6720af994ca.jpg"
+    alt="Cadet Skyranger standing before an orange planetary horizon"
+    draggable="false"
+  >
+
+  <!-- Header -->
+  <div class="logo">
+    <div class="logo-mark"></div>
+    <span class="logo-name">MUQI</span>
+  </div>
+
+  <div class="menu" aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Hero copy -->
+  <section class="copy">
+    <div class="eyebrow">CADET</div>
+
+    <div class="headline-window">
+      <h1 class="headline">SkyPulse</h1>
+    </div>
+
+    <div class="subtitle">Past the Stars and Further</div>
+  </section>
+
+  <!-- Video-based head tracking -->
+  <video
+    class="head-video"
+    id="headVideo"
+    muted
+    playsinline
+    preload="auto"
+    disablepictureinpicture
+    aria-hidden="true"
+  ></video>
+
+  <!-- Transparent helmet image -->
+  <img
+    class="helmet"
+    id="helmet"
+    src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/e8c78660-4497-41b9-82ae-a4738a5edd11.jpg"
+    alt=""
+    draggable="false"
+  >
+
+  <!-- Actual interaction button -->
+  <button
+    class="push-button"
+    id="pushButton"
+    type="button"
+    aria-label="Toggle cadet helmet"
+    aria-pressed="false"
+  >
+    <span>PUSH</span>
+    <span>ME</span>
+  </button>
+
+  <!-- Footer -->
+  <div class="caption left">3D Interaction</div>
+    <div class="caption right">@muqistudio.design</div>
+
+</main>
+
+<!-- Custom cursor -->
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
